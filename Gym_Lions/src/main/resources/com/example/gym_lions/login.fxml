@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gym_lions.HelloControllers">
+   <!-- Your FXML content here -->
+   <children>
+      <AnchorPane layoutX="213.0" layoutY="-7.0" prefHeight="386.0" prefWidth="381.0" style="-fx-background-color: #5e5e5e;">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="143.0" layoutX="134.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/WhatsApp_Image_2024-12-17_à_10.04.19_7bf675ac-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="148.0" text="ID" textFill="#ffffff">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id_field" layoutX="35.0" layoutY="168.0" prefHeight="34.0" prefWidth="299.0" promptText="Enter your ID" style="-fx-background-color: #333333; -fx-border-color: #444444; -fx-border-width: 2; -fx-text-fill: #ffffff;" />
+            <Label layoutX="35.0" layoutY="213.0" text="PASSWORD" textFill="#ffffff">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password_field" layoutX="35.0" layoutY="233.0" prefHeight="34.0" prefWidth="299.0" promptText="Enter your password" style="-fx-background-color: #333333; -fx-border-color: #444444; -fx-border-width: 2; -fx-text-fill: #ffffff;" />
+            <Button fx:id="login_btn" layoutX="133.0" layoutY="286.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #444444; -fx-text-fill: #ffffff; -fx-border-width: 2; -fx-border-color: #ffffff; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" text="LOGIN" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="386.0" fitWidth="226.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/img_1.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

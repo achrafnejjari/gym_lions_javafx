@@ -1,0 +1,51 @@
+/* Base Button Styles (Applied to All Buttons) */
+.button {
+    -fx-background-color: #ffffff; /* White background for a clean, minimalist look */
+    -fx-text-fill: #495057;        /* Dark text color for contrast */
+    -fx-font-size: 14px;           /* Harmonized font size */
+    -fx-border-color: #ced4da;     /* Subtle light gray border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;        /* Rounded corners for a modern feel */
+    -fx-background-radius: 4px;
+    -fx-padding: 6px 12px;         /* Balanced padding */
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1); /* Soft shadow */
+    -fx-transition: all 0.2s ease-in-out; /* Smooth transition for hover effect */
+    -fx-margin: 8px 4px; /* Spacing between buttons */
+}
+
+/* Hover Effect for All Buttons */
+.button:hover {
+    -fx-background-color: #f1f3f5; /* Subtle light gray background on hover */
+    -fx-border-color: #adb5bd;      /* Light border color for consistency */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 6, 0, 0, 3); /* More prominent shadow */
+    -fx-scale-x: 1.05;              /* Slight zoom effect */
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;               /* Pointer cursor */
+    -fx-z-index: 1;                 /* Elevate hovered button */
+}
+
+/* Clicked Effect for All Buttons */
+.button:pressed {
+    -fx-background-color: #e9ecef;  /* Slightly darker background on press */
+    -fx-border-color: #adb5bd;      /* Light border on press */
+    -fx-translate-y: 1px;           /* Subtle pressed-down effect */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0, 0, 1); /* Light shadow */
+}
+
+/* Specific Style for New Button (Slightly Darker Background) */
+.new-button {
+    -fx-background-color: #f8f9fa; /* Slightly darker than other buttons */
+}
+
+/* Hover Effect for New Button */
+.new-button:hover {
+    -fx-background-color: #e2e6ea; /* Darker hover effect */
+}
+
+/* Icon Styling Inside Buttons (if using FontAwesome or similar) */
+.button FontAwesomeIcon {
+    -fx-fill: #495057; /* Consistent with text color */
+    -fx-font-size: 14px; /* Harmonized with button text */
+}
+

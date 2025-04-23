@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="522.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gym_lions.Payment">
+   <children>
+      <AnchorPane fx:id="sidePane" prefHeight="524.0" prefWidth="49.0" style="-fx-background-color: #0C090D;">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="82.0" fitWidth="58.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogout" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="473.0" minWidth="46.0" onAction="#OnbtnLogout" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;" text="  ">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" selectionFill="#fffefe" size="32" />
+               </graphic>
+            </JFXButton>
+            <VBox fx:id="menuVBox" layoutX="6.0" layoutY="138.0" prefHeight="200.0" prefWidth="44.0">
+               <children>
+                  <JFXButton fx:id="btnAdd" minWidth="46.0" onAction="#OnbtnAdd" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PLUS" opacity="0.5" selectionFill="#fffefe" size="32" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnRefresh" alignment="CENTER_RIGHT" contentDisplay="CENTER" minWidth="44.0" onAction="#OnbtnRefresh" opacity="0.5" prefHeight="50.0" prefWidth="44.0" text="  ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" size="32" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPayment" alignment="CENTER" contentDisplay="CENTER" minWidth="46.0" onAction="#OnbtnPayment" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;" text="  ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" selectionFill="#fffefe" size="32" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnList" alignment="CENTER" contentDisplay="CENTER" minWidth="46.0" onAction="#OnbtnList" opacity="0.5" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;" text="  ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="LIST" selectionFill="#fffefe" size="32" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="382.0" layoutY="24.0" prefHeight="224.0" prefWidth="302.0" style="-fx-background-color: #D9D9D9;" styleClass="raduis">
+         <children>
+            <Label fx:id="our_total_amount" layoutX="85.0" layoutY="148.0" prefHeight="62.0" prefWidth="198.0" text="??" textFill="#3c6e71">
+               <font>
+                  <Font name="Bernard MT Condensed" size="40.0" />
+               </font>
+            </Label>
+            <Text fill="#353535" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_style" text="Our Total income" wrappingWidth="169.79998779296875">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="230.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/wallet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="383.0" layoutY="274.0" prefHeight="206.0" prefWidth="301.0" style="-fx-background-color: #D9D9D9;" styleClass="raduis">
+         <children>
+            <Label fx:id="new_clients" alignment="CENTER_RIGHT" layoutX="93.0" layoutY="136.0" prefHeight="61.0" prefWidth="198.0" text="??" textFill="GREEN">
+               <font>
+                  <Font name="Bernard MT Condensed" size="49.0" />
+               </font>
+            </Label>
+            <Text fill="#353535" layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_style" text="New Client" wrappingWidth="82.39999999999986">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="50.0" fitWidth="46.0" layoutX="248.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/add.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="91.0" layoutY="26.0" prefHeight="110.0" prefWidth="247.0" style="-fx-background-color: #D9D9D9;" styleClass="raduis" AnchorPane.topAnchor="26.0">
+         <children>
+            <Label fx:id="total_users" alignment="CENTER_RIGHT" layoutX="101.0" layoutY="65.0" prefHeight="38.0" prefWidth="132.0" text="??" textFill="#284b63">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+            </Label>
+            <Text fill="#353535" layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_style" text="Total Number of users" wrappingWidth="146.39998474121103">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="210.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="702.0" layoutY="26.0" prefHeight="110.0" prefWidth="247.0" style="-fx-background-color: #D9D9D9;" styleClass="raduis">
+         <children>
+            <Label fx:id="total_expired" alignment="CENTER_RIGHT" layoutX="136.0" layoutY="64.0" prefHeight="34.0" prefWidth="106.0" text="??" textFill="RED">
+               <font>
+                  <Font name="Bernard MT Condensed" size="34.0" />
+               </font>
+            </Label>
+            <Text fill="#353535" layoutX="14.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font_style" text="Expired subscribtions" wrappingWidth="131.99994506835947">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="203.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/expired.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="91.0" layoutY="162.0" prefHeight="319.0" prefWidth="272.0" style="-fx-background-color: #D9D9D9;" styleClass="raduis">
+         <children>
+            <TableView fx:id="table" prefHeight="319.0" prefWidth="272.0">
+               <columns>
+                  <TableColumn fx:id="FullName" prefWidth="88.00000762939453" text="Full Name" />
+                  <TableColumn fx:id="EndDate" prefWidth="93.5999755859375" text="End date" />
+                  <TableColumn fx:id="MoneyAmount" prefWidth="88.80001831054688" text="Amount" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="347.0" fitWidth="248.0" layoutX="702.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" styleClass="radius">
+         <image>
+            <Image url="@../../../images/payment_pic.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

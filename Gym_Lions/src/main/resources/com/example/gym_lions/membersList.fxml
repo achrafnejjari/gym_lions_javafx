@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="524.0" prefWidth="957.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gym_lions.memberList">
+   <children>
+      <TableView fx:id="tableView" layoutX="66.0" layoutY="-1.0" prefHeight="524.0" prefWidth="939.0">
+         <columns>
+            <TableColumn fx:id="member_id" prefWidth="114.0" text="Member ID" />
+            <TableColumn fx:id="first_name" prefWidth="131.0" text="First Name" />
+            <TableColumn fx:id="last_name" prefWidth="112.0" text="Last Name" />
+            <TableColumn fx:id="address" prefWidth="185.60006713867188" text="Address" />
+            <TableColumn fx:id="start_date" prefWidth="122.4000244140625" text="Start Date" />
+            <TableColumn fx:id="end_date" prefWidth="104.0001220703125" text="End Date" />
+            <TableColumn fx:id="amount" prefWidth="72.7999267578125" text="Amount" />
+            <TableColumn fx:id="gender" prefWidth="100.80002441406248" text="Gender" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="sidePane" prefHeight="524.0" prefWidth="49.0" style="-fx-background-color: #0C090D;">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="82.0" fitWidth="58.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Bodybuilder_male_figure_icon__GYM_logo_template__athletic_man_sign_white_silhouette_on_black_background__Vector_illustration-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogout" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="473.0" minWidth="46.0" onAction="#OnbtnLogout" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;" text="  ">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" selectionFill="#fffefe" size="32" />
+               </graphic>
+            </JFXButton>
+            <VBox fx:id="menuVBox" layoutX="6.0" layoutY="138.0" prefHeight="200.0" prefWidth="44.0">
+               <children>
+                  <JFXButton fx:id="btnAdd" minWidth="46.0" onAction="#OnbtnAdd" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PLUS" opacity="0.5" selectionFill="#fffefe" size="32" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnRefresh" alignment="CENTER_RIGHT" contentDisplay="CENTER" minWidth="44.0" onAction="#OnbtnRefresh" opacity="0.5" prefHeight="50.0" prefWidth="44.0" text="  ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="REFRESH" size="32" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPayment" alignment="CENTER" contentDisplay="CENTER" minWidth="46.0" onAction="#OnbtnPayment" opacity="0.5" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;" text="  ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" selectionFill="#fffefe" size="32" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnList" alignment="CENTER" contentDisplay="CENTER" minWidth="46.0" onAction="#OnbtnList" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: black;" text="  ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="LIST" selectionFill="#fffefe" size="32" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

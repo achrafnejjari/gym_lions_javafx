@@ -1,0 +1,58 @@
+/* Root container background color */
+.pane {
+    -fx-background-color: #adb5bd; /* Light gray */
+}
+
+/* AnchorPane specific style */
+.anchor-pane {
+    -fx-background-color: #1e1e1e; /* Dark gray */
+}
+
+/* ImageView - No specific changes unless needed */
+.image-view {
+    -fx-preserve-ratio: true;
+}
+
+/* Label styles */
+.label {
+    -fx-text-fill: #1f1f1f; /* White text */
+    -fx-font-family: "Arial Bold";
+    -fx-font-size: 13px;
+}
+
+/* TextField styles */
+.text-field {
+    -fx-background-color: #333333; /* Dark gray */
+    -fx-border-color: #444444; /* Lighter gray border */
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+/* PasswordField styles */
+.password-field {
+    -fx-background-color: #333333; /* Dark gray */
+    -fx-border-color: #444444; /* Lighter gray border */
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: #444444; /* Gray */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-border-width: 2;
+    -fx-border-color: #ffffff; /* White border */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+/* Optional: Button hover effect */
+.button:hover {
+    -fx-background-color: #5a5a5a; /* Slightly lighter gray on hover */
+}
+
+/* Optional: Button pressed effect */
+.button:pressed {
+    -fx-background-color: #333333; /* Darker gray on press */
+}
